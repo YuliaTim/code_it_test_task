@@ -39,9 +39,8 @@ $(document).ready(function() {
 		url: "http://codeit.pro/codeitCandidates/serverFrontendTest/company/getList", //получаем данные с сервера 
 		success: function(response) {
 			companiesList = response.list;
-      		$(".loader").delay(3000).fadeOut(300); //убираем лоадер
+      		$(".loader").delay(2000).fadeOut(300); //убираем лоадер
 			$(".totalComp span").delay(100).text(companiesList.length); //выводим инфо о количестве компаний в блок
-			console.log(companiesList);
 
 			var namesList = '';
 
@@ -76,6 +75,18 @@ $(document).ready(function() {
 					if ($(".graph").width() > $(".graphWrapp").width()) { 
 						$(".graphWrapp").css("overflow-x", "scroll"); //скролл партнеров
 				}
+					else if ($(".graph").width() < $(".graphWrapp").width()) { 
+						$(".graphWrapp").css("overflow-x", "hidden");
+				}
+
+					$(window).on("resize", function() { //скролл партнеров по ресайзу
+					if ($(".graph").width() > $(".graphWrapp").width()) { 
+						$(".graphWrapp").css("overflow-x", "scroll"); 
+				}
+					else if ($(".graph").width() < $(".graphWrapp").width()) { 
+						$(".graphWrapp").css("overflow-x", "hidden"); 
+				}
+					});		
 			});
 		},
 		error:function(xhr,err){
