@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/css3finalize/4.0.1/jquery.css3finalize.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="formbox">
+			<div class="title"><span>Sign Up</span></div>
+			<form id="signForm" action="http://codeit.pro/codeitCandidates/serverFrontendTest/user/registration" method="post">
+				<div class="fild">
+					<span class="fa fa-user"></span>
+					<input type="text" name="name" required placeholder="Имя">
+				</div>
+				<div class="fild">
+					<span class="fa fa-user"></span>
+					<input type="text" name="secondname" required placeholder="Фамилия">
+				</div>
+				<div class="fild">
+					<span class="fa fa-envelope"></span>
+					<input type="email" name="email" required placeholder="E-mail">
+				</div>			
+				<select name="gender">
+					<option value="male">Мужской</option>
+					<option value="female">Женский</option>	
+				</select>	
+				<div class="fild">
+					<span class="fa fa-key"></span>
+					<input type="password" name="pass" required placeholder="Пароль">
+				</div>		
+				<div class="check">
+					<input type="checkbox" required id="conditions">
+					<label for="conditions">С условиями ознакомлен</label>
+				</div>
+				<input type="submit" required class="button" value="Отправить">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
