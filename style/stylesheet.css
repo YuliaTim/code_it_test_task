@@ -51,10 +51,6 @@ option {
 	outline: none;
 }
 
-input[type="checkbox"] {
-/*	display: none;*/
-}
-
 .check {
 	text-align: left;
 }
@@ -102,7 +98,7 @@ form:after {
   z-index: 999;
 }
 
-.loaderInner{
+.loaderInner {
 	position:absolute;
 	width:125px;
 	height:125px;
@@ -112,7 +108,7 @@ form:after {
 	left: 110px;
 }
 
-.circle{
+.circle {
 	position:absolute;
 	background-color:rgb(255,255,255);
 	height:22px;
@@ -124,13 +120,13 @@ form:after {
 	animation-direction:normal;
 }
 
-.circle01{
+.circle01 {
 	left:0;
 	top:51px;
 	animation-delay:0.45s;
 }
 
-.circle02{
+.circle02 {
 	left:15px;
 	top:15px;
 	animation-delay:0.6s;
@@ -148,31 +144,31 @@ form:after {
 	animation-delay:0.9s;
 }
 
-.circle05{
+.circle05 {
 	right:0;
 	top:51px;
 	animation-delay:1.05s;
 }
 
-.circle06{
+.circle06 {
 	right:15px;
 	bottom:15px;
 	animation-delay:1.2s;
 }
 
-.circle07{
+.circle07 {
 	left:51px;
 	bottom:0;
 	animation-delay:1.35s;
 }
 
-.circle08{
+.circle08 {
 	left:15px;
 	bottom:15px;
 	animation-delay:1.5s;
 }
 
-@keyframes floating{
+@keyframes floating {
 	0%{
 		background-color:rgb(0,0,0);
 	}
@@ -181,7 +177,6 @@ form:after {
 		background-color:rgb(255,255,255);
 	}
 }
-
 
 /*end loader*/
 
@@ -334,7 +329,6 @@ form:after {
 /*RESPONSIVE*/
 
 @media (max-width: 755px) {
-
 	.wrapper {
 		padding: 0;
 	}
@@ -351,7 +345,6 @@ form:after {
 }
 
 @media (max-width: 450px) {
-
 	.box {
 		max-width: 320px;
 	}
@@ -360,5 +353,7 @@ form:after {
 		width: 280px;
 	}
 
+	input {
+		width: 85%;
+	}
 }
-	
